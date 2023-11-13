@@ -34,9 +34,9 @@ const Head = () => {
         <button className="border border-black-400 w-20 h-10 bg-gray-100 text-xs rounded-r-full"><SearchIcon className=""/></button>
       </div>
       <div className="col-span-1">
-        <div>
+        <div className="flex space-x-4">
         <button
-            className={`rounded-full p-2 ${
+            className={`rounded-full mt-3 p-2 ${
               isDarkTheme ? "bg-gray-700" : "bg-gray-400"
             }`}
             onClick={toggleThemeHandler}
