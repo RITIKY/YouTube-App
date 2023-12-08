@@ -23,6 +23,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 import PodcastsIcon from '@mui/icons-material/Podcasts';
 import CollapseSideBar from "./CollapseSideBar";
+import { Link } from "react-router-dom";
 
 
 const Sidebar = () => {
@@ -36,14 +37,14 @@ const Sidebar = () => {
     }`;
   return (
     <aside
-      className={`fixed top-16 z-50 w-60 h-screen   left-0 overflow-y-auto ${theme ? "bg-gray-900 text-white" : "bg-white text-black"
+      className={`fixed top-16 z-50 w-60 h-screen left-0 overflow-y-auto ${theme ? "bg-gray-900 text-white" : "bg-white text-black"
         }`}
     >
       <div className="p-1 shadow-lg w-52 text-base">
         <ul className="">
-          <li className={listItems}><HomeIcon className="mr-3" />Home</li>
-          <li className={listItems}><FlashOnIcon className="mr-3" />Shorts</li>
-          <li className={listItems}><SubscriptionsIcon className="mr-3" />Subscriptions</li>
+          <li className={listItems}><HomeIcon className="mr-3" /><Link to='/'>Home</Link></li>
+          <li className={listItems}><FlashOnIcon className="mr-3" /><Link>Shorts</Link></li>
+          <li className={listItems}><SubscriptionsIcon className="mr-3" /><Link>Subscriptions</Link></li>
         </ul>
         <hr className="my-4 border-t border-gray-800" />
         {/* <h1 className="font-bold pt-4">Explore</h1> */}
@@ -70,9 +71,6 @@ const Sidebar = () => {
         <hr className="my-4 border-t border-gray-800" />
         <ul>
           <p className="ml-2 font-bold">Explore</p>
-          <li>
-
-          </li>
           <li className={listItems}><WhatshotIcon className="mr-3" />Trending</li>
           <li className={listItems}><ShoppingBasketIcon className="mr-3" />Shopping</li>
           <li className={listItems}><MusicNoteIcon className="mr-3" />Music</li>

@@ -3,7 +3,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
-
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
@@ -17,7 +16,7 @@ const CollapseSideBar = () => {
                 <li className={listItemClasses}>
                     <div className='flex items-center flex-col m-2'>
                         <HomeIcon className=''/>
-                        <span className='text-sm text-center'>Home</span>
+                        <Link to="/"><span className='text-sm text-center'>Home</span></Link>
                     </div>
                 </li>
                 <li className={listItemClasses}>

@@ -5,7 +5,7 @@ import { formatDistanceToNow } from "date-fns";
 
 const VideoCart = ({ info }) => {
   const theme = useSelector((store) => store.theme.isDarkTheme);
-  console.log(info, "info");
+  // console.log(info, "info");
   if (!info || !info.snippet) {
     return null;
   }

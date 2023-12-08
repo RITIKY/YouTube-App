@@ -9,7 +9,7 @@ const ButtonList = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   const theme = useSelector((store) => store.theme.isDarkTheme)
   return (
-    <div className={`fixed top-16 ml-20 flex ${theme ? "bg-gray-300 rounded text-white" : "bg-white text-black"}`} style={{ width: "92rem" }}>
+    <div className={`fixed top-14 p-4 ml-12 flex ${theme ? "bg-gray-300 text-white" : "bg-white text-black"}`} style={{ width: "92rem" }}>
       {mapButtons.map((buttonName, index) => (
         <Button key={index} name={buttonName} />
       ))}
